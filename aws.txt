@@ -1,0 +1,203 @@
+AWS
+Describe your experience with AWS services:
+Various AWS services we used in the curret project are EC2, S3, RDS, Lambda, etc. 
+Explain the difference between EC2 and Lambda:
+EC2 is a scalable virtual server in AWS, while Lambda is a serverless compute 
+service. EC2 requires provisioning and managing servers, while Lambda 
+automatically scales and executes code in response to events.
+How would you optimize costs in AWS:
+Reserved Instances for predictable workloads, 
+implementing Auto Scaling, leveraging Spot Instances for non-critical workloads,
+and monitoring usage through AWS Cost Explorer.
+Explain VPC (Virtual Private Cloud) in AWS and its significance:
+VPC as a logically isolated section of the AWS Cloud, allowing 
+customization of network configuration. its role is controlling virtual 
+networking environments, including subnets, routing tables, and security settings.
+Explain the difference between EBS and S3 storage in AWS:
+EBS (Elastic Block Store) provides block-level storage for EC2 instances, while 
+S3 (Simple Storage Service) is object storage accessible over HTTP. EBS is 
+attached to EC2 instances, while S3 is a standalone service for storing objects.
+
+Most Commonly used services in AWS:
+Amazon EC2:
+Amazon Elastic Compute Cloud is a web service that provides secure, resizable
+compute capacity in the cloud. It is designed to make web-scale cloud computing
+easier for developers.
+Amazon RDS:
+The Amazon Relational Database Service was designed to make your infrastructure
+more user friendly. By using this AWS service, you can create dedicated instances
+of databases within minutes.
+Amazon S3:
+Amazon Simple Storage Service is an object storage service offering industry 
+leading scalability, data availability, security, and performance.
+Amazon CloudFront:
+Amazon CloudFront is a web service that speeds up distribution of your static and
+dynamic web content, such as . html, . css, . js, and image files, to our users.
+Amazon VPC:
+Amazon VPC stands for Amazon Virtual Private Cloud. It's a service that lets you
+create a private network within the (AWS). This VPC allows you to have control 
+over your virtual networking environment, including selecting your IP address
+range, creating subnets, configuring tables, and more. It's a way to isolate
+and control your cloud resources securely.
+Amazon SNS:
+Amazon Simple Notification Service is a web service that makes it easy to set up,
+operate, and send notifications from the cloud.
+AWS IAM:
+AWS Identity and Access Management is a service that helps you securely control 
+access to AWS resources. IAM allows you to manage users, their permissions, and
+their level of access to the AWS Management Console. 
+It enables you to create and manage users and groups, assign policies to control
+permissions, set up multi-factor authentication, and establish roles for different
+purposes within your AWS environment. Ultimately, IAM helps maintain security and
+control over your AWS infrastructure.
+AWS AUTOSCALING:
+AWS Auto Scaling is a service that automatically adjusts the number of compute 
+resources in your AWS setup based on demand. It helps ensure that you have the 
+right number of instances available to handle varying workloads.It can scale resources both 
+vertically  and horizontally.
+AWS CLOUDWATCH:
+Amazon CloudWatch is a monitoring service provided by AWS.It allows you to collect
+and track metrics, collect and monitor log files, set alarms, and automatically 
+react to changes in your AWS resources. Essentially, CloudWatch helps you gain 
+insights into your applications, infrastructure, and overall system health within
+the AWS environment.
+Secret Manager:
+Secret Manager is a service that allows you to securely store, manage, and retrieve
+sensitive information such as API keys, database passwords, and other credentials 
+used in your applications. It helps in centralizing and controlling access to this
+confidential data within your AWS infrastructure.
+Event Bridge:
+EventBridge is a fully managed event bus service that simplifies building event 
+driven applications.you can create rules that specify how to process events.
+Amazon MQ:
+MQ managed message broker service for Apache ActiveMQ and RabbitMQ that 
+streamlines setup, operation, and management of message brokers on AWS. 
+
+Security Groups
+A security group acts as a virtual firewall for your EC2 instances to control 
+incoming and outgoing traffic. Inbound rules control the incoming traffic to your
+instance, and outbound rules control the outgoing traffic from your instance.
+How many subnets can i create per vpc:
+Currently you can create 200 subnets per VPC
+Amazon API GATEWAY:
+Amazon API Gateway is a fully managed service that makes it easy for us to
+create, publish, maintain, monitor, and secure APIs at any scale. APIs act as 
+the "front door" for applications to access data, business logic, or functionality
+from your backend.
+Types Of Load Balancers In AWS:
+Classic Load Balancer:
+The oldest version, providing basic load balancing across multiple EC2 instances.
+Application Load Balancer:
+Works at the application layer and allows routing based on content, such as 
+routing based on URL path or hostname. Ideal for HTTP and HTTPS traffic.
+Network Load Balancer:
+Operates at the transport layer  and efficiently handles high volumes of 
+traffic while maintaining low latency. Best suited for TCP traffic. 
+
+Amazon ECS:
+Yes, I my  project I got the Opportunity to work on Amazon ECS.Here I used
+to manage Containerized applications,configured clusters for high availability and 
+scalability using ECS.For an istance, I setup auto-scaling polocies based on CPU
+and memory utilization with in the containers.Additionally, I also implemented
+Blue-green deployments to minimize the down-time during the deployments as well.
+For example,We have an web application running on amazon ECS.We got the 
+requirement to update this application, here i will using blue-green deployment 
+strategy.
+Amazon DynamoDB:
+Yes, i have worked on dynamoDB in myn project where I have designed and implemented
+DynamoDB tables, optimized queries for performance and cost efficency.
+In our project, we managed various ascpects of customer data,transaction and the
+account information.
+For customer accounts, i have designed a dynamoDB table which containes attributes
+like AccountID,CustomerID,AccountType and Balance.
+This table will get the data based on the AccountID.
+Load Balancers:
+Basically, load balancers distribute incoming traffic across multiple instances
+of the application to optimize performance and prevent load on a single server.
+In our project we have used load balancer to distribute user requests among 
+multiple web servers to handle customer transactions and interactions.
+Auto-Scaling Groups:
+Basically, auto-scaling groups automatically adjust the number of servers based 
+on the demand.During peak periods, these groups dynamically increase server instance
+to maintain the response, and during the low traffic they scale down to minimize 
+costs.This helps us to maintain smooth operations , high availability and cost
+efficency.
+AWS Lambda:
+I have worked on AWS Lambda.Basically these are used to build serverless 
+architecture,automate process and handle data transformations.
+In our project, I used Lambda functions to process incoming data from Amazon S3,
+perform validations, and trigger some steps based on the data received. These 
+functions were responsible for real-time data processing.
+Additionally, I have used Lambda functions to create APIs using Amazon API Gateway
+enabling us to build microservices that responded to some of the specific HTTP 
+requests.
+I have integrated Lambda functions with other AWS services like Amazon DynamoDB, 
+SNS (Simple Notification Service), SQS (Simple Queue Service).
+Have you worked on Configuring VPC, security groups, troubleshooting the network
+flow:
+The Virtual Private Cloud (VPC) serves as the infrastructure for various services 
+like transaction processing and databases operate. VPC security groups act as 
+virtual firewalls controlling inbound and outbound traffic.
+We had a scenario where the transaction processing servers need to access a 
+database server to retrieve customer financial data.As a devops engineer I ensured
+that only these specific transaction servers were allowed access to the database
+server by configuring the VPC security groups.
+For Troubleshooting  scenarios where transactions were data wasn't being retrieved
+we will be analyzing the network flow by inspecting the security group rules. 
+Sometimes, misconfigured rules or improper permissions caused these issues. 
+By understanding the network traffic patterns and the necessary communication 
+paths.
+Have you troubleshooted issues related to high CPU utilization on an EC2 instance:
+I have worked on troubleshooting issues related to high CPU utilization on an EC2 
+instance.I will be identifying the specific instance which is occupying high CPU
+usage through monitoring tools like CloudWatch.
+I will be checking the running processes, assessing the instance's workload, and 
+identifying any sudden spikes in traffic or resource-intensive applications. 
+Throughout this process, I will be focusing on minimizing downtime and any
+distrubance to services while addressing the high CPU utilization problem.
+Have you troubleshooted and resolved network connectivity issues between AWS
+resources:
+In our project, we ensure smooth and secure communication between different AWS 
+resources is crucial. For instance, we had a scenario where our application server,
+is responsible for handling customer transactions, it needs to communicate 
+securely with a backend database storing financial records.
+In this scnerio , i will be checking the network connectivity issues, it could 
+disrupt transactions.
+Identifying the Problem:
+I will start by examining the VPC setup, security groups, and route tables 
+associated with both the application server and the database instance. This
+basically involves traffic flow and the necessary ports are open for communication
+Analyzing Network Flow:
+Tools like  CloudWatch, I will analyze the traffic patterns between these 
+resources.
+Troubleshooting and Resolution:
+Based on the analysis,we had discover misconfigured security groups or route table entries
+that prevent proper connectivity.I will be adjustinmg these configurations.
+Have you resolved issues with intermittent failures in an aws lambda functions:
+I will be folwing some basic approches like
+I will be checking CloudWatch logs to identify specific error patterns associated 
+with  failures within Lambda functions.
+I will be conducting the code reviews,to optimize resource allocation, refine
+error handling.
+Understanding the interactions between Lambda functions and external services are 
+also very important.
+I will be fine-tuning Lambda configurations to handleloads, adjusting the limits 
+and auto-scaling.
+Have you fixed issues with excessive memory usage in an aws lambda function: 
+Yes, I have fixed some issues.In our project's AWS Lambda function is used for
+reducing memory usage. This function is used to identify memory operations,
+optimized code by reducing unnecessary object creation, and adjusted batch 
+process to handle smaller data chunks. Additionally, we utilized AWS monitoring 
+tools to fine-tune resource allocation and implemented different mechanism to
+minimize repeated computations, this results in memory savings and improved
+performance.
+Have you troubleshooted and resolved issues with failing auto scaling events in an
+auto scaling groups:
+In our project, we had failing auto scaling events within an Auto Scaling Group.
+The issue was due to misconfigured health checks and insufficient monitoring. To
+resolve it, we first updated health checks to accurately detect the application's
+state. We then fine-tuned alarm thresholds in CloudWatch to trigger scaling 
+actions proactively. Additionally, we optimized instance launch configurations for
+faster boot times, ensuring timely response during scaling events. These 
+adjustments has sucessfully resolved the failing auto scaling events, ensuring 
+smoother and more reliable scaling in our application.

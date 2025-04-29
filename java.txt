@@ -1,0 +1,82 @@
+Interface:
+The interface is a kind of mechanism to achieve abstarction.
+It defines as an abstract type used to specify the behaviour of the class.
+The interface contains static constants and abstract methods.
+It does not contain any body.
+
+Exception:
+Exception is an unwanted or unexpected event, which occurs during the execution of a
+program, i.e. at run time, that disrupts the normal flow of the program’s instruction. 
+All exception and error types are subclasses of the class Throwable
+Types of Exception:
+1)Checked Exception: Checked exceptions are called compile-time exceptions because 
+these exceptions are checked at compile-time by the compiler.
+1)classNotFound
+2)IOException
+3)FileNotException
+2)Unchecked Exception:  The compiler will not check these exceptions at compile time.
+1)Arthmetic Exception
+2)NullPointerException
+3)ArrayIndexOutOfBound
+Exception can be handled by: 
+try, catch, throw, throws, and finally
+
+Hibernate:
+Hibernate is a Java framework that simplifies the development of Java application to
+interact with the database. It is an open source, lightweight, ORM 
+(Object Relational Mapping) tool. Hibernate implements the specifications of JPA 
+(Java Persistence API) for data persistence.
+Eager Loading:
+is a design pattern in which data initialization occurs on the spot.
+Lazy Loading 
+is a design pattern that we use to defer initialization of an object as long as it’s
+ possible.
+Hibernate Transaction Management:
+In hibernate framework, we have Transaction interface that defines the unit of work.
+It maintains abstraction from the transaction implementation 
+The methods of Transaction interface are as follows:
+void begin() : starts a new transaction.
+void commit() : ends the unit of work unless we are in FlushMode.NEVER.
+void rollback(): forces this transaction to rollback.
+void setTimeout(int seconds) : it sets a transaction timeout for any transaction 
+started by a subsequent call to begin on this instance.
+boolean isAlive(): checks if the transaction is still alive.
+void registerSynchronization(Synchronization s): registers a user synchronization 
+callback for this transaction.
+boolean wasCommited() :checks if the transaction is commited successfully.
+boolean wasRolledBack() :checks if the transaction is rolledback successfully. 
+
+Some of the Java 8 features:
+functional Interface:
+An Interface that contains exactly one abstract method is known as functional 
+interface. It can have any number of default, static methods but can contain only 
+one abstract method. It can also declare methods of object class.
+Lamda Expression:
+Lambda Expressions in Java are the same as lambda functions which are the short 
+block of code that accepts input as parameters and returns a resultant value. 
+there are three types:
+Zero Parameter:-> System.out.println("Zero parameter lambda");
+Single Parameter:System.out.println("One parameter: " + p);
+Multiple Parameters:System.out.println("One parameter: " + p1);
+stream API:
+The stream can be used by importing "java.util.stream" package. Stream API is used to
+process collections of objects. Streams are designed to be efficient and can support
+by improving your program’s performance by allowing you to avoid unnecessary loops 
+and iterations.
+How does Stream Work:
+To filter out from the objects we do have a function named filter().To collect 
+elements we will be using Collectors.toList() to collect all the required elements.
+Lastly, we will store these elements in a List and display the outputs on the console.
+Spring Boot Annotations:
+Spring Boot Annotations is a form of metadata that provides data about a program. 
+annotations are used to provide supplemental information about a program.
+ex:
+1)@Configuration: It is a class-level annotation.@Configuration used by Spring 
+Containers as a source of bean definitions.
+2)@Component: It is a class-level annotation. It is used to mark a Java class as a 
+bean.@Component is found during the classpath. The Spring Framework wil pick it up
+and configure it in the application context as a Spring Bean.
+3)@Controller: The @Controller is a class-level annotation. It is a specialization 
+of @Component. It marks a class as a web request handler. It is often used to serve 
+web pages. By default, it returns a string that indicates which route to redirect. 
+It is mostly used with @RequestMapping annotation.

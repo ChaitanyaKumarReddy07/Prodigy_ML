@@ -1,0 +1,43 @@
+Grafana
+Grafana is an open-source solution for running data analytics with the help of 
+metrics that give us an insight into the complex infrastructure and massive amount 
+of data that our services deal with, with the help of customizable dashboards.
+
+Expreince in grafana:
+In our project, I used Grafana for monitoring my application infrastructure. It 
+helped me track metrics like the percentage of errors popping up, server uptime, etc.
+The app instances were deployed as Docker containers managed by docker swarm. There 
+were times when the instances were down or a critical issue caused the system to 
+crash. All of these scenarios were tracked on the Grafana dashboard, which made my 
+life a lot easier.
+The data was pulled from Prometheus which was plugged into the Grafana dashboard as 
+a data source. Queries were fired from the dashboard with different expressions such
+ as min, avg etc. And Prometheus pulled data from cAdvisor. Here is the 
+ architectural flow.
+ 
+Grafana features:
+Key features
+Panels: visualize your data any way you want using histograms, graphs, geomaps, 
+heatmaps, etc.
+Plugins: Render your data in real time on a user-friendly API via panel plugins that
+ hook into existing data sources—no data migration required. You can also create 
+ data source plugins, retrieving metrics from any custom API.
+Alerts: One user interface lets you create, consolidate, and control all your alerts.
+Transformations: Rename, summarize, combine, and perform calculations across data 
+sources and queries.
+Annotations: Use rich events from different data sources to annotate graphs.
+Panel Editor: A consistent user interface for configuring and customizing your 
+panels. 
+
+Why use Kubernetes Monitoring in Grafana Cloud?
+Accelerate time to value:
+Reduce deployment, setup, and troubleshooting time with this ready-to-use monitoring
+tool that only requires running a few CLI commands
+Identify root causes faster:
+Drill down through your infrastructure with the cluster navigation view to identify 
+and resolve issues, without the hassle of switching between different windows and 
+monitoring tools.
+Reduce costs::
+Efficiency and cost monitoring visualizations deliver comprehensive insights into 
+your spending, enabling data-driven decisions about resource allocation, scaling 
+strategies, and tech investments.

@@ -1,0 +1,65 @@
+Hi, Myself Rupa I have 5 years experience and around 4 years 
+experience on devops CI/CD implementation.
+I worked as a devops engineer in Harman connected service private ltd, 
+As part of my role I am responsible to create and setup DevOps CI/CD 
+pipelines.
+I worked on the tools like GIT,Bitbucket,Maven,Jenkins,Ansible,Sonarqube,
+Nexus,Jfrog,Docker and kubernetes.
+I have around 2 years experience on aws services like Ec2,VPC,S3,RDS,
+Loadbalancer,Autoscalling and Route53.
+Comming to my day-to-day activties,As a Devops Engineer I will be 
+supporting for many applications.
+
+GIT
+=== 
+--> I am invloving Enabling branching strategies.
+--> I will be Creating various repos using various git commands.
+--> Resolving merge conflicts.
+--> Managing github and Bitbucket using CROWD server.
+
+Jenkins
+=======
+--> Setting up jenkins server and configuring master slave configuration.
+--> Creating free style ,Pipeline and multibranch pipeline jobs with 
+different configurations.
+--> Monitoring jobs using catlight tool and also integrate with other 
+devops tools using jenkins.
+
+Ansible
+=======
+--> I will be Setting up ansible control machine and worker nodes.
+--> Writing ansible playbooks and roles as part of infra components 
+installation requirement.
+--> I have experience on ansible tower here I am configuring job,
+workflow templates and project configurations.
+--> I have converted existing shell scripts to ansible playbooks.
+
+Docker
+======
+--> I will be Setting up docker environment.
+--> Writing docker files and building custom images.
+--> I have Experience on writing docker compose and stack files.
+--> Managing containers on single and multiple machines with the help of
+docker swarm.
+
+Kubernetes
+==========
+--> I have less experience on Kubernetes but I have involved on Setting 
+up cluster on on-prem servers and google cloud, Writing service files 
+and deployment files as per requirement.
+
+Process
+=======
+We are using JIRA as our issue tracking tool we are getting mainly 2 
+catageries of tickets those are BAU and Sprint tickets.
+
+BAU --> we are getting 3 to 4 tickets,we can resolve this tickets ASAP.
+Sprint --> Every 2 weeks we have one sprint,Every 3 sprints one 
+milestone,Each milestone we are going for deployment.
+
+--> Daily we have Standup meeting is there, here we have discuss ongoing 
+issues and blockers.
+
+
+ 
+ 

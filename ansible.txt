@@ -1,0 +1,44 @@
+ANSIBLE
+
+Ansible:
+Ansible is a configuration management tool from Red Hat that automates the process 
+of configuring multiple servers and deploying applications.
+Describe the Ansible playbook and its components:
+An Ansible playbook is a file containing organized instructions, written in YAML
+format, to define automation tasks. It consists of plays, which contain tasks, 
+modules, hosts, variables, and handlers
+SYNTAX OF ANSIBLE PLAYBOOK:
+Its written in YAML format.
+
+---
+- name:
+  hosts:
+  
+  tasks:
+  - name:Install nginx
+  apt:
+     name: nginx
+	 state:present
+the above example installs the "nginx" package using "apt" module.	 
+	 
+	 
+Explain Ansible roles and their importance in playbook organization:
+Roles in Ansible are a way to organize tasks, variables, and files in a reusable
+structure. They help in maintaining a clean playbook by separating different
+functionalities, making it easier to manage and scale automation.
+How does Ansible handle security:
+Ansible ensures security through SSH, using industry-standard encryption and 
+authentication methods. It also allows the use of vaults to encrypt sensitive 
+data.
+How do you handle errors or failures in Ansible playbooks:
+Ansible offers various error handling mechanisms like the ignore_errors flag for 
+specific tasks, failed_when conditions, or utilizing block and to manage errors 
+within a playbook.
+Explain the difference between Ansible ad-hoc commands and playbooks:
+Ad-hoc commands are executed from the command line for one-time tasks or quick 
+operations, while playbooks are YAML files providing a more organized, reusable, 
+and scalable way to define and execute multiple tasks.
+How do you handle dynamic inventories in Ansible:
+Ansible supports various inventory plugins to dynamically fetch inventory from 
+sources like cloud providers, databases, or scripts. This allows for automatic 
+updates to inventory based on the infrastructure's changes.

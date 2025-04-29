@@ -1,0 +1,63 @@
+what is kafka:
+Apache Kafka is a distributed publish-subscribe messaging system and a robust queue 
+that can handle a high volume of data and enables you to pass messages from one 
+end-point to another.
+Benefits  of it:
+Following are a few benefits of Kafka −
+Reliability − 
+Kafka is distributed, partitioned, replicated and fault tolerance.
+Scalability − 
+Kafka messaging system scales easily without down time..
+Durability − 
+Kafka uses Distributed commit log which means messages persists on disk as fast as 
+possible, hence it is durable..
+Performance − 
+Kafka has high throughput for both publishing and subscribing messages. It maintains
+ stable performance even many TB of messages are stored.
+Topics
+A stream of messages belonging to a particular category is called a topic. Data is 
+stored in topics.Topics are split into partitions. For each topic, Kafka keeps a 
+mini-mum of one partition. Each such partition contains messages in an immutable 
+ordered sequence. A partition is implemented as a set of segment files of equal 
+sizes. 
+Brokers
+Brokers are simple system responsible for maintaining the pub-lished data. Each
+broker may have zero or more partitions per topic. Assume, if there are N partitions
+in a topic and N number of brokers, each broker will have one partition.
+Kafka Cluster
+Kafka’s having more than one broker are called as Kafka cluster. A Kafka cluster can 
+be expanded without downtime.
+Producers
+Producers are the publisher of messages to one or more Kafka topics. Producers send 
+data to Kafka brokers. Every time a producer pub-lishes a message to a broker, the 
+broker simply appends the message to the last segment file.
+Consumers
+Consumers read data from brokers. Consumers subscribes to one or more topics and 
+consume published messages by pulling data from the brokers.
+
+Workflow of Pub-Sub Messaging
+Following is the step wise workflow of the Pub-Sub Messaging −
+Producers send message to a topic at regular intervals.
+Kafka broker stores all messages in the partitions configured for that particular 
+topic. It ensures the messages are equally shared between partitions. If the 
+producer sends two messages and there are two partitions, Kafka will store one 
+message in the first partition and the second message in the second partition.
+Consumer subscribes to a specific topic.
+Once the consumer subscribes to a topic, Kafka will provide the current offset of 
+the topic to the consumer and also saves the offset in the Zookeeper ensemble.
+Consumer will request the Kafka in a regular interval (like 100 Ms) for new messages.
+Once Kafka receives the messages from producers, it forwards these messages to the 
+consumers.
+Consumer will receive the message and process it.
+Once the messages are processed, consumer will send an acknowledgement to the Kafka 
+broker.
+Once Kafka receives an acknowledgement, it changes the offset to the new value and 
+updates it in the Zookeeper. Since offsets are maintained in the Zookeeper, the 
+consumer can read next message correctly even during server outrages.
+What is the role of the offset?
+In partitions, messages are assigned a unique ID number called the offset. The role 
+is to identify each message in the partition uniquely
+How do consumers consumes messages in Kafka?
+The transfer of messages is done in Kafka by making use of send file API. The 
+transfer of bytes occurs using this file through the kernel-space and the calls 
+between back to the kernel and kernel user.

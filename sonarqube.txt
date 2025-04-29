@@ -1,0 +1,11 @@
+SONARQUBE
+
+Sonarqube is used for continuous inspection of code quality to perform automatic
+reviews with static analysis of code to detect bugs.
+"Quality profiles" are a key part of your Sonarqube configuration. They define
+the set of rules to be applied during code analysis.
+If the code quality is failed, if its a developer side bug we will raise the 
+ticket.
+How does Sonarqube analyze the code quality:
+SonarQube uses various tools and plugins to analyze code against predefined rules,
+checking for issues related to bugs, security vulnerabilities, coding standards. 

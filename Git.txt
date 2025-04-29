@@ -1,0 +1,110 @@
+GIT:
+Git is a distributed version control system used for tracking changes in files,
+coordinating work among multiple people, and collaboration on projects.
+What Statergy you are using for git Branching:
+We have 4 branching statergies.
+Master Branch:Represents the stable code that is deployed to production. 
+It should always reflect the latest production-ready state.
+Develop Branch:
+Serves as the integration branch where all ongoing development takes place. It's 
+where various features, fixes, and updates come together.
+Feature Branches:
+Created off the develop branch for developing new features or changes. For 
+instance, a developer might create a feature/user-profile branch to work on a
+new user profile feature.
+Release Branches:
+Branched off develop when it's time to prepare for a new release. For example,
+a release/2.0 branch might be created for final testing and adjustments before 
+launching version 2.0.
+Hotfix Branches:
+These branches are created from master to address critical issues or bugs in the
+live application. For instance, if there's a severe security bug in the live site,
+a hotfix/security-fix branch would be made to resolve the issue directly in the 
+production code.
+
+In action:
+1. Developers start by creating feature branches for specific tasks. They work on 
+these branches, making changes and improvements related to the assigned feature.
+2. Once a feature is complete and tested thoroughly, it's merged back into the 
+develop branch, ensuring it aligns with other ongoing work.
+3. When the develop branch reaches a stable state and it's time to prepare for a 
+release, a release branch is created from develop. This branch is dedicated to
+ final testing, bug fixes, and any necessary adjustments before deploying to 
+ production.
+4. After thorough testing and final checks, the release branch is merged into 
+both master for deployment and develop to incorporate any changes made during the 
+release process.
+
+Common commands include:
+git push: 
+used to upload local repository changes to a remote repository. It sends
+your committed changes from your local branch to the corresponding branch on the 
+remote server.
+git fork:
+Its used to create a new repository that shares code and visibility settings with
+the original “upstream” repository.
+git clone:
+Its used to create a copy of a Git repository. It fetches all the files,
+branches, and commit history from a remote repository and sets it up on your 
+local machine.
+git commit:
+The git commit command captures a snapshot of the projects currently 
+staged changes.
+git init:
+this command is used to create the new Git repository.
+git mv:
+This command is used to move or rename the files within a git repository.
+git stash:
+git stash is a command used to temporarily save changes that are not ready to be 
+committed yet. when you want to switch branches or perform some other operation 
+without committing your current changes.stash command is used.
+How to push a file from local to the remote repository:
+1.Adding the file
+adding the file by using "git add" command.
+2.Commit the changes
+commit the changes by using "git commit -m (file name)"
+3.push to the remote repository
+for push to remote repo we use "git push origin main"
+here origin represents the remote repo and main represents the branch name.
+
+Process to revert a commit that has already been pushed and made public:
+1.find the commit, you want to revert.Use "git log" command to check the commit ID.
+2.Revert the commit,Use "git revert <commitID>" command to create a new commit.
+3.push the revert commit,by using the "git push" command.
+
+How do you find a list of files that has been changed in a particular commit:
+use the command "git-tree -r <commitID>" by using this we can check the list of 
+files changed in a particular commit.
+
+What is the difference between git fetch and git pull:
+git fetch retrieves the latest changes from a remote repository but doesn't merge
+them with your local branch. On the other hand, git pull fetches the changes and
+automatically merges them into your current branch.
+
+Explain the difference between Git merge and rebase:
+Git merge integrates changes from one branch into another while keeping the 
+branch's commit history. Rebase is like rewrites the commit history 
+by moving the starting point of one branch to another, resulting in a linear 
+history.
+Describe the Git workflow you follow in your projects:
+Basically we follow the feature branch workflow. Each new feature or fix is 
+developed in a separate branch, tested, and then merged into the main branch via
+pull requests after code review.In our project, I created a feature branch named 
+"user-authentication" to implement a new login system. After completing the 
+feature, I initiated a pull request, which triggered code review and subsequent 
+merging into the main branch upon approval.
+
+How do you resolve a merge conflict in Git:
+Check the Status:
+Use "git status" to see which files have conflicts.
+Locate Conflicts:
+Open the conflict file in your code editor. 
+Resolve Conflicts:
+Manually edit the conflict lines to keep the changes you want.
+Mark as Resolved:
+After editing, save the file and stage them using "git add" command.
+Commit Changes:
+Once all conflicts are resolved, commit the changes with "git commit" command.
+Verify: 
+Run "git status" command to ensure there are no more conflicts and 
+everything is committed.

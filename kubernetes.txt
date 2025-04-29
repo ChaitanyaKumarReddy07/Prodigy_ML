@@ -1,0 +1,124 @@
+KUBERNETES:
+
+Explain Kubernetes and its key components:
+Kubernetes is an open-source container orchestration platform used to automate 
+deployment, scaling, and management of containerized applications. Its key 
+components include Pods, Deployments, Services, and the Control Plane.
+"Docker Swarm" does not manage any containers but instead  a cluster manager 
+for Docker containers.
+Clusters:
+cluster is a grouping of nodes that run containerized apps in an efficient,
+automated,distributed manner. Kubernetes clusters allows us to orchestrate and 
+monitor containers across multiple physical, virtual, and cloud servers.
+Master Node:
+master node is responsible for managing the cluster. It sees scheduling, 
+maintaining cluster state, and will manage other nodes. Components like the 
+API server, scheduler,and control of the cluster's operations.Nodes are the
+physical servers or VMs that comprise a Kubernetes Cluster.
+What is a Pod in Kubernetes:
+A Pod is the smallest deployable unit in Kubernetes, representing one or more 
+containers sharing networking and storage resources. Containers within a Pod run 
+on the same node and communicate via localhost.
+Describe Kubernetes Deployments and StatefulSets:
+Deployments manage stateless applications, ensuring a defined number of identical
+pods are running. StatefulSets handle stateful applications by providing stable, 
+unique identifiers and stable storage.
+How does Kubernetes handle scaling:
+Kubernetes offers two types of scaling: Horizontal Pod Autoscaling (HPA) 
+automatically adjusts the number of pods based on CPU utilization, while Vertical
+Pod Autoscaling (VPA) adjusts the resources allocated to individual pods.
+Explain Kubernetes networking:
+Kubernetes networking involves various components like Services, which enable 
+communication between pods; managing external access to services; and 
+Network Policies  for pod communication within the cluster.
+How does Kubernetes manage storage:
+Kubernetes manages storage through PersistentVolumes (PVs) and 
+PersistentVolumeClaims (PVCs). PVs abstract underlying storage, while PVCs request
+specific storage resources dynamically.
+How do you troubleshoot Kubernetes deployments:
+Troubleshooting in Kubernetes involves checking pod statuses, examining logs using
+kubectl logs, describing pod configurations with kubectl describe, checking events
+with kubectl get events, and verifying network connectivity.
+How to check your kubernetes clusters are up and running:
+kubectl cluster-info:
+This command displays information about the cluster, including the Kubernetes 
+master and its services.
+kubectl get nodes: 
+This command shows the status of all nodes in your cluster. If they are all listed
+and in the "Ready" state, your cluster is likely running fine.
+kubectl get pods --all-namespaces:
+This command lists all pods across namespaces. If you see pods in the Running 
+state, it indicates that the cluster is functional.
+
+Creating a cluster in Kubernates
+Choose a Kubernetes Provider:
+Select a provider like Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes 
+Service (EKS)
+Set up the Cluster:
+Using the provider, This typically involves configuring nodes,networking, and 
+authentication
+Deploy Kubernetes Components:
+Deploy necessary components such as kube-apiserver, kube-controller-manager, 
+kube-scheduler, across the cluster.
+Configure Networking:
+Set up networking to enable communication between pods across the cluster. Tools 
+like Flannel.
+Deploy Applications:
+Once the cluster is up, deploy your applications using YAML manifests or Helm 
+charts.
+Kubernetes architecture and its components
+API server: 
+The API server is the central component in a Kubernetes cluster. It is responsible
+for managing the state of the cluster and exposing the Kubernetes API. The API 
+server is the endpoint for all requests to the Kubernetes cluster.
+Etcd: 
+Etcd is a distributed key-value store that is used to store the configuration 
+data for the Kubernetes cluster. This data includes information about nodes,
+pods, and services.
+Controller Manager: 
+The controller manager is responsible for managing the state of the cluster.
+Scheduler:
+The scheduler is responsible for scheduling pods to run on specific nodes in the 
+cluster. It takes into account the resource requirements of each pod.
+Container Runtime:
+The container runtime is responsible for pulling the images and starting the 
+containers.
+Explain the different types of controllers in Kubernetes:
+ReplicaSet Controller: 
+Ensures that a specified number of pod replicas are running at any given time. 
+It's the replication controller and allows more complex selector options.
+Deployment Controller:
+Manages ReplicaSets and provides declarative updates to pods and ReplicaSets. It 
+allows for easy scaling, rolling updates, and rollbacks of applications.
+StatefulSet Controller: 
+Maintains a set of pods with a stable identity, useful for stateful applications 
+like databases. It provides unique identities, stable network identifiers, and 
+ordered deployment and scaling.
+kube-API-server:
+kube-api-server is the control plane component that exposes the Kubernetes API and
+serves as the front end for the Kubernetes control plane. It validates and 
+processes API requests, maintains the desired state of the cluster, and handles 
+communication with other components. 
+kube-scheduler:
+kube-scheduler is responsible for assigning newly created pods to nodes in the
+cluster, based on factors like resource requirements, hardware/software constraints
+and policies optimizing resource utilization and maintaining cluster stability.
+Kubectl:
+It allows you to run commands against Kubernetes clusters.
+What happens if a master node fails?What happens if a worker node fails:
+If a master node in Kubernetes fails, it can cause a disruption in cluster 
+management. However, Kubernetes is designed to be resilient, so often there are 
+master nodes to prevent complete failure. If one fails, another takes over its 
+responsibilities.
+On the other hand, if a worker node fails, the pods running on that node might 
+also fail. Kubernetes detects this and attempts to reschedule those pods onto 
+other healthy nodes. The application continues running, maintaining its desired 
+state, as Kubernetes manages the failed node's workload.
+What are the different ways to provide API security on Kubernetes:
+1.Authentication
+2.Authorization
+3.Encryption
+4.API Gateway
+5.Network Policies
+6.Secrets Management
+7.Monitoring

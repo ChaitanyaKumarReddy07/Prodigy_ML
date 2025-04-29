@@ -1,0 +1,53 @@
+TERRAFORM
+Explain the purpose of Terraform in infrastructure management:
+Terraform is an Infrastructure as Code (IaC) tool used to provision, manage, and 
+version infrastructure , enabling infrastructure automation and ensuring
+consistency across deployments.
+Describe the difference between Terraform plan, apply, and destroy commands: 
+terraform plan: Generates an execution plan showcasing the changes Terraform will
+make without actually applying them.
+terraform apply: Executes the changes defined in the Terraform configuration to 
+create or modify infrastructure resources.
+terraform destroy: Destroys all the resources defined in the Terraform 
+configuration.
+Explain the concept of Terraform modules and their significance:
+Terraform modules are reusable components that are sets of resources and
+configurations. They promote code reusability, simplify infrastructure management,
+and enable abstraction of complex infrastructure components.
+Can you discuss where you used Terraform to manage multi-cloud environments:
+In our project  Terraform we used resources in AWS using provider-specific 
+configurations within the same codebase.
+Where you implemented automated infrastructure scaling using Terraform:
+Terraform could be utilized to create an autoscaling group in AWS, where instances
+automatically scale based on predefined metrics like CPU utilization or incoming
+traffic.
+How would you handle dependencies between Terraform resources:
+In our project, you might encounter situations where resource A depends on 
+resource B. Terraform handles this using implicit and explicit dependencies, 
+ensuring resource B is created before resource A.
+Explain how you would manage Terraform configuration for different environments 
+(dev, staging, production):
+Using Terraform workspaces  for each environment allows for distinct but similar
+setups across different environments, ensuring consistency while specifies to each.
+How do you manage multiple terraform environments:
+1.Version Control System
+2.Directory Structure
+3.State Management
+4.Workspaces
+5.Workflow
+6.Infrastructure as Code 
+7.Documentation
+How do you handle sensitive data in terraform:
+1.Use Variables
+2.Secret Management Tools
+3.State Management
+4.Sensitive Data Encryption
+5.Parameter Store Integration
+How would you integrate your Terraform into your CI/CD process:
+For example we need set up a GitLab CI pipeline that will triggers whenever 
+changes are pushed to a specific branch. This pipeline could use Terraform scripts
+to update infrastructure on AWS based on the committed changes.
+For instance, you might have a file structure like:
+- main.tf: Provider configuration and resource definitions.
+- variables.tf: Declaration of variables used in the script.
+- outputs.tf: Definition of output values after infrastructure provisioning.

@@ -1,0 +1,69 @@
+
+DOCKER
+
+Explain Docker and its benefits:
+"Docker is a containerization platform that allows for the packaging, distribution
+and running of applications in isolated environments called containers. Its 
+benefits include portability, scalability, and consistency across different 
+environments."
+Docker is used to create the appliactions run and deploy the application.
+What are the main components of Docker architecture:
+"Docker architecture consists of the Docker Engine, Docker Images, Docker 
+Containers, and Docker Registry. The Engine is the runtime that runs and manages 
+containers, Images are templates for containers, Containers are the running 
+instances of images, and the Registry is a repository for Docker images."
+"Docker File" 
+It is a text document containing all the commands the user requires to 
+call on the command line to assemble an image.With the help of a Dockerfile, users
+can create an automated build that executes several command-line instructions.
+This file is crucial for reproductibility and consistency when deploying 
+applications across different environments. 
+How do you create a Docker image:
+Docker images are created using Dockerfiles. A Dockerfile is a text file that 
+contains instructions for building the image layer by layer. Using commands like
+FROM, RUN, COPY, CMD, etc.,
+Explain the difference between a Docker container and an image:
+A Docker image is a template that contains the application and its dependencies,
+while a Docker container is a running instance of that image. Containers are 
+isolated environments created from images and can be started, stopped, deleted, 
+and moved.
+What is Docker Compose, and how does it work:
+Docker Compose is a tool for defining and running multi-container Docker 
+applications. It uses a YAML file to configure the services, networks, and 
+volumes needed for the application, enabling the creation and management of 
+multiple containers as a single service.
+How do you share docker containers with different nodes:
+To share Docker containers across different nodes, you can use container 
+orchestration tools like Kubernetes or Docker Swarm. These tools help manage and 
+distribute containers among multiple nodes in a cluster, allowing seamless sharing
+and scaling of containerized applications. They handle tasks like container 
+deployment, scaling, load balancing, and more across a network of nodes.
+Docker Swarm:
+does not manage any containers but instead  a cluster manager 
+for Docker containers.
+What are the commands to create docker swarm:
+1.Initialize a Swarm on the Docker Engine:
+use docker swarm init
+2.Join Nodes to the Swarm:
+docker swarm join --token
+Docker Networking:
+It allows containers to communicate with each other and with external networks.
+Some key aspects are 
+1.Container-to-Container Communication
+2.Bridge Networking
+3.Host Networking
+4.Overlay Networks
+How would you integrate your docker into CI/CD pipeline:
+Integrating the Docker into our CI/CD pipeline involves like Docker containers to 
+streamline the development process. For instance, we could use Docker to 
+containerize our application and include Dockerfile and docker-compose files 
+within our codebase. This allows us to automate the building, testing, and 
+deployment stages.
+1.During the CI process, the pipeline could pull the code from our repository,
+ build a Docker image, run unit tests within a container, and if it successful, 
+ push the image to a registry.
+2.In CD process, Docker enables us to deploy the tested image onto various 
+environments like staging or production, maintaining the consistency across 
+different platforms. With Docker, we can easily manage dependencies, scale our 
+application, and rollback changes if needed, this enchances the efficiency and 
+reliability of our deployment process.

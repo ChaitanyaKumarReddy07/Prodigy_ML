@@ -1,0 +1,48 @@
+"lsblk" 
+This commamd is used to see the list of files (devices)
+"cat /etc/os-release"
+this command is used to check the "OS" version
+"git --version"
+to check whether git is installed or not
+"java --version"
+to check java is installed or not 
+"sudo apt update -y"
+This is used to update the package in a linux machine
+"wget 'given the file url'"
+this will download the required file
+"tar xvf 'filename'"
+This coommand is used to extract the tar file
+".bashrc"
+in this file we can set the path permanently
+"source 'give the path'"
+this will save the path after giving the details in the .bashrc file
+"unzip 'give the zip file'"
+this will unzip the zip file
+"sudo apt install unzip -y"
+this will install the unzip software in the ubuntu
+"9000" -- default port number for sonarqube
+"8080" -- jenkins port number & for tomcat aswell
+"3000" -- grafana port number
+"8081" -- nexus port number
+"git clone 'give the git URL'"
+this will clone the git code
+"mvn clean package"
+this will build the maven project
+"sh sonar.sh start"
+this will start the sonar
+"sudo systemctl start jenkins"
+this will start the jenkins
+"sudo systemctl start grafana-server"
+this will start the grafana server
+"sudo apt install docker.io -y"
+this will install docker in ubuntu machine
+"sudo apt install ansible -y"
+this will install the ansible 
+"mv 'filename' 'actualname you want to give'"
+this command is used to rename any file name
+"cd /opt"
+all the third party software will be installed in this directory
+
+
+
+
