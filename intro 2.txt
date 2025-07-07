@@ -1,0 +1,54 @@
+•	DevOps Engineer with 2.7+ years of hands-on experience in designing and automating CI/CD
+ pipelines, managing scalable cloud infrastructure on Microsoft Azure, and deploying
+ containerized applications using Docker and Kubernetes. 
+•	Proven expertise in infrastructure  as code (Terraform, Azure CLI), monitoring
+ (Prometheus, Grafana), and scripting (Python, Bash). Adept at Agile methodologies and 
+ cross-functional collaboration to drive continuous delivery and operational excellence.
+•	Experienced in integrating various CI/CD tools such as Jenkins, GitHub Actions, and
+ Artifactory to streamline builds and deployments.
+•	Solid coding and scripting skills using SQL, Python, .Net and Bash for automation 
+and development.
+•	Competent in Agile principles such as sprint planning, daily scrums, and release
+ planning.
+
+ Day 1 – Infrastructure & Database Setup
+
+✅ Launched an EC2 instance on AWS (Ubuntu)
+✅ Installed and configured Node.js, npm, and MySQL server
+✅ Created and connected a MySQL database to the backend
+✅ Successfully ran the full-stack app locally with database integration
+
+🧑‍💻 Day 2 – Version Control & Collaboration
+
+✅ Created a GitHub Organization and initialized the repository
+✅ Implemented a branching strategy (main and dev branches)
+✅ Pushed source code to the dev branch
+✅ Set up GitHub teams with appropriate access roles (write, triage)
+
+⚙️ Day 3 – Continuous Integration & Code Quality
+
+✅ Launched dedicated EC2 instances for Jenkins and SonarQube
+✅ Installed Trivy and Gitleaks for security and secret scanning
+✅ Integrated Jenkins with SonarQube for automated static analysis
+✅ Developed a Groovy-based CI pipeline with the following stages:
+✅ Frontend & backend build
+✅ Secret scanning with Gitleaks
+✅ Static analysis using SonarQube
+✅ Quality gate enforcement
+✅ Filesystem scanning via Trivy
+
+🐳 Day 4 – Dockerization & Image Management
+
+✅ Wrote multi-stage Dockerfiles for frontend, backend, and database containers
+✅ Configured Docker Compose to orchestrate app + MySQL locally
+✅ Built Docker images as part of Jenkins CI pipeline
+✅ Pushed versioned images to Docker Hub using secure credentials
+✅ Ensured all services (frontend, backend, database) are containerized and networked
+
+
+🔜 Next Steps:
+
+1️⃣ Deploy to dev, stage, and preprod environments
+2️⃣ Plan & implement production deployment
+3️⃣ Integrate Grafana + Prometheus for monitoring
+4️⃣ Set up centralized logging with the ELK Stack
