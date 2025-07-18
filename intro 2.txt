@@ -1,54 +1,130 @@
-•	DevOps Engineer with 2.7+ years of hands-on experience in designing and automating CI/CD
- pipelines, managing scalable cloud infrastructure on Microsoft Azure, and deploying
- containerized applications using Docker and Kubernetes. 
-•	Proven expertise in infrastructure  as code (Terraform, Azure CLI), monitoring
- (Prometheus, Grafana), and scripting (Python, Bash). Adept at Agile methodologies and 
- cross-functional collaboration to drive continuous delivery and operational excellence.
-•	Experienced in integrating various CI/CD tools such as Jenkins, GitHub Actions, and
- Artifactory to streamline builds and deployments.
-•	Solid coding and scripting skills using SQL, Python, .Net and Bash for automation 
-and development.
-•	Competent in Agile principles such as sprint planning, daily scrums, and release
- planning.
-
- Day 1 – Infrastructure & Database Setup
-
-✅ Launched an EC2 instance on AWS (Ubuntu)
-✅ Installed and configured Node.js, npm, and MySQL server
-✅ Created and connected a MySQL database to the backend
-✅ Successfully ran the full-stack app locally with database integration
-
-🧑‍💻 Day 2 – Version Control & Collaboration
-
-✅ Created a GitHub Organization and initialized the repository
-✅ Implemented a branching strategy (main and dev branches)
-✅ Pushed source code to the dev branch
-✅ Set up GitHub teams with appropriate access roles (write, triage)
-
-⚙️ Day 3 – Continuous Integration & Code Quality
-
-✅ Launched dedicated EC2 instances for Jenkins and SonarQube
-✅ Installed Trivy and Gitleaks for security and secret scanning
-✅ Integrated Jenkins with SonarQube for automated static analysis
-✅ Developed a Groovy-based CI pipeline with the following stages:
-✅ Frontend & backend build
-✅ Secret scanning with Gitleaks
-✅ Static analysis using SonarQube
-✅ Quality gate enforcement
-✅ Filesystem scanning via Trivy
-
-🐳 Day 4 – Dockerization & Image Management
-
-✅ Wrote multi-stage Dockerfiles for frontend, backend, and database containers
-✅ Configured Docker Compose to orchestrate app + MySQL locally
-✅ Built Docker images as part of Jenkins CI pipeline
-✅ Pushed versioned images to Docker Hub using secure credentials
-✅ Ensured all services (frontend, backend, database) are containerized and networked
+Here's a list of interview experience questions framed based on the detailed responses you shared. You can post these one by one on LinkedIn as part of your interview preparation journey, self-learning, or experience sharing series. Each question is concise and focuses on practical, real-world DevOps scenarios and Linux/AWS knowledge.
 
 
-🔜 Next Steps:
+---
 
-1️⃣ Deploy to dev, stage, and preprod environments
-2️⃣ Plan & implement production deployment
-3️⃣ Integrate Grafana + Prometheus for monitoring
-4️⃣ Set up centralized logging with the ELK Stack
+✅ Linux and System Administration
+
+1. How do you perform an in-place upgrade from RHEL 7 to RHEL 8 using the leapp utility? What are the precautions you take?
+
+
+2. Have you ever dealt with a Linux boot failure due to fstab misconfiguration? How did you recover the system?
+
+
+3. What steps do you follow when configuring network bonding on a RHEL server for redundancy and throughput?
+
+
+4. How do you tune kernel parameters for performance in RHEL? What tools and files are involved?
+
+
+5. Explain how to configure user access and sudo privileges securely in Linux.
+
+
+
+
+---
+
+✅ AWS & EC2
+
+6. What steps are involved in assigning a secondary private IP address to an EC2 instance? How do you make it persist after reboot?
+
+
+7. How do you optimize Amazon S3 cost using storage classes and lifecycle policies?
+
+
+8. What is Object Lock in S3 and when should you enable it?
+
+
+9. How do you deploy applications in a 3-tier architecture on AWS using EC2, RDS, and Load Balancer?
+
+
+10. How do you manage IAM roles and security groups effectively in a multi-instance EC2 environment?
+
+
+
+
+---
+
+✅ CI/CD & Jenkins
+
+11. How do you implement multi-branch pipelines in Jenkins and why are they important for DevOps workflows?
+
+
+12. What are some best practices you follow to secure a Jenkins server and credentials?
+
+
+13. How do you troubleshoot a failed deployment in GitLab CI/CD? What are the typical causes?
+
+
+
+
+---
+
+✅ Kubernetes & OpenShift
+
+14. What’s the difference between a container and a pod in Kubernetes? When should you use StatefulSets over Deployments?
+
+
+15. Have you faced pod scheduling failures in Kubernetes due to resource limits? How did you resolve it?
+
+
+16. How do you expose services in Kubernetes using NodePort, Ingress, and LoadBalancer types?
+
+
+17. How do you handle Kubernetes RBAC permission issues while deploying an application?
+
+
+18. What’s the role of kubelet, kube-proxy, and etcd in a K8s cluster?
+
+
+19. What challenges have you faced with persistent volumes and how did you solve them?
+
+
+20. What tools or commands do you use to debug networking issues inside a Kubernetes pod?
+
+
+
+
+---
+
+✅ Terraform & IaC
+
+21. How do you use the lifecycle block in Terraform to ignore changes to specific fields like hostname?
+
+
+22. What’s your approach to safely creating or modifying EC2 instances in Terraform using AWS provider configuration?
+
+
+23. How do you handle rollback or change management in Terraform when updating critical infrastructure?
+
+
+
+
+---
+
+✅ Real-World Experience
+
+24. Describe a production issue that involved node pressure in Kubernetes. How did you identify and mitigate it?
+
+
+25. In a cloud migration project, how did you choose between in-place OS upgrades and provisioning new VMs?
+
+
+26. What monitoring and alerting tools did you use with Azure Monitor or AWS CloudWatch to scale applications effectively?
+
+
+
+
+---
+
+Would you like me to:
+
+Create LinkedIn post templates with hashtags and intro text?
+
+Format these into a PDF or blog style document?
+
+Prioritize a specific tech (e.g., AWS, Kubernetes) for your first post?
+
+
+Let me know how you’d like to proceed!
+
